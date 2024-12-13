@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--police roboto google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,
+wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
   <header>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,16 +27,16 @@
     <section id="home">
       <div align="center">
         <h1><font color="grey">Jake Ashe Portfolio</font></h1>
-        <img src="Capture d’écran 2024-11-24 013722.png" alt="This is me; Jake Ash.">
-        <button type="button">Get To Know Me</button> 
+        <button type="button" class="round-button">Get To Know Me</button>
       </div>
       <!-- this is the about page  -->
     <section id="about">
       <div>
+        <img class="jack-pic" src="Capture d’écran 2024-11-24 013722.png" alt="This is me; Jake Ash.">
         <h2><font color="black">This Is Me</font></h2>
         <p>
-          Hi I'm Jack Ashe, I've always found presentations like 'Hello, my name is blah blah, I have blah blah, 
-          I am blah blah' boring, so I created this short film about me to introduce myself in a more original way, 
+          Hi I'm Jack Ashe, I've always found presentations like "Hello, my name is blah blah, I have blah blah, 
+          I am blah blah" boring, so I created this short film about me to introduce myself in a more original way, 
           I hope you enjoy watching it as much as I enjoyed making it.
         </p>
       </div>
@@ -38,7 +44,7 @@
         <iframe
         width="500"
         height="300"
-        src="https://youtu.be/QHoFPBGEmXI?si=2P8N57HYIrUpGv5U"
+        src="https://youtu.be/QHoFPBGEmXI?si=0nK8sSoDjFND51hQ"
       ></iframe> 
       </div>
     </section>
@@ -70,8 +76,9 @@
     <!-- this is the resume page  -->
     <section id="resume">
       <h2><font color="black">Resume</font></h2>
-      <div>
-        <h3><font color="grey">Profile</font></h3>
+     
+      <div class="resume">
+        <h3><font color="black">Profile</font></h3>
         <ul>
           <li>Jake Ashe</li>
           <li>Cinematographer</li>
@@ -190,15 +197,15 @@
           </dd>
         </p>
       </div>
-      <div>
+      <div class="audio">
         <h3><font color="grey">A little voice message for you</font></h3>
         <audio src="blabla/audio.mp3" controls></audio>
       </div>
     </section> 
 
     <!-- this is the contact page -->
+    <h2><font color="black">Contact Me</font></h2>
     <section id="contact">
-      <h2><font color="black">Contact Me</font></h2>
       <h3>If you have any questions, feel free to ask.</h3>
       <label>Fist name</label>
         <input type="text" placeholder="enter yout last name" /><br />
@@ -215,9 +222,9 @@
 
  <!-- footer  -->
  <footer>
-  <div>
-    <div>
-      <h2><font color="black">Follow Me On</font></h2>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>Follow Me On</h2>
       <ul>
         <li>
           <a
@@ -233,24 +240,26 @@
           >
         </li>
       </ul>
-      <h2><font color="black">Take A Look At My Website</font></h2>
+    </div>
+
+    <div class="footer-center">
       <ul>
+        <h2>Take A Look At My Website</h2>
         <li>
           <a href="https://jakeashe.com/">My Website</a>
         </li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
-      
     </div>
-    <div>
-      <ul>
-        <li>&copy; 2024 portfolio, Inc.</li>
+
+    <div class="footer-right">
+      <h2>Credit</h2>
+      <li>&copy; 2024 portfolio, Inc.</li>
         <li>All rights reserved.</li>
-        <li>
-          <a href="#">Terms of use and privacy policy</a> |
-          <a href="#contact">Contact Us</a>
+          <a href="#">Terms of use and privacy policy</a> 
         </li>
-      </ul>
-    </div>
+      </div>
+
   </div>
 </footer>
 
